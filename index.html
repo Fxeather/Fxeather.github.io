@@ -141,3 +141,29 @@ alt="The Little Tiger" width="400">
 </body>
 
 </html>
+   
+   <!DOCTYPE html>
+<html>
+<body>
+<style>
+</style>
+<p>Select your favorite album:</p>
+<form action="/action_page.php">
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="red dragonfly">red dragonfly<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="love">love<br>
+  <input type="radio" name="album" onclick="myFunction(this.value)" value="happy new year">happy new year<br>
+  
+
+  Your favorite album is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
+</form>
+
+<script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+</script>
+
+</body>
+</html>
+
